@@ -18,7 +18,7 @@ window.onload = function() {
     if (e.key === "Enter") {
       let create = document.createElement("li");
       create.innerHTML =
-        '<span><i class="fa-solid fa-xmark me-3"></i></span>' + addtodo.value;
+        '<span><i class="fa-solid fa-xmark"></i></span>' + addtodo.value;
       liParent.appendChild(create);
       let span = create.firstChild;
       span.addEventListener("click", function() {
