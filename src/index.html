@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>TodoList Vanilla.js</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -11,19 +11,33 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1 class="mt-5">Todo List</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <input id="addToDo" type="text" placeholder="Add item" />
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-xmark me-3"></i></span>hola
+            </li>  
+        </div>
       </div>
     </div>
+    <footer class="fixed-bottom footer mt-auto py-3 bg-warning text-center">
+      <div class="container">
+        <span class="text-muted">
+          Made with ❤️ by
+          <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
