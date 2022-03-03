@@ -13,8 +13,27 @@ li {
   background: rgb(223, 221, 216);
   margin-top: 3px;
   margin-bottom: 3px;
-}
-li span i {
   padding-left: 5px;
+} /* 
+li span {
   padding-right: 5px;
+  transition: opacity 0.5s;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+li:hover span {
+  opacity: 1;
+  height: auto;
+} */
+
+li span {
+  width: 0px;
+  display: inline-block;
+  opacity: 0;
+  transition: width 0.5s, opacity 0.5s linear;
+}
+li:hover span {
+  opacity: 1;
+  width: 15px;
 }
